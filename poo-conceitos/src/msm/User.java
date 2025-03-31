@@ -9,17 +9,17 @@ public class User {
   public static void main(String[] args) {
     ServicoMensagem smi = null;
     //chamada de metodos pelo usuario
-   String appEscolhido = "tlg";
-  // alteracoes
-   if (appEscolhido.equals("msn")){
-     smi = new MSNMesseger();
-   } else if (appEscolhido.equals("fbm")) {
-     smi = new FacebookMenseger();
-   } else if (appEscolhido.equals("tlg")) {
-     smi = new Telegram();
-   }
+    String appEscolhido = "tlg";
+    // alteracoes
+    if (appEscolhido.equals("msn")) {
+      smi = new MSNMesseger();
+    } else if (appEscolhido.equals("fbm")) {
+      smi = new FacebookMenseger();
+    } else if (appEscolhido.equals("tlg")) {
+      smi = new Telegram();
+    }
 
-   smi.enviarMensagem();
-   smi.recebendoMensagem();
+    smi.enviarMensagem();
+    smi.recebendoMensagem();
   }
 }
