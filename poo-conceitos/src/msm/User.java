@@ -10,7 +10,7 @@ public class User {
     ServicoMensagem smi = null;
     //chamada de metodos pelo usuario
    String appEscolhido = "tlg";
-
+  // alteracoes
    if (appEscolhido.equals("msn")){
      smi = new MSNMesseger();
    } else if (appEscolhido.equals("fbm")) {
