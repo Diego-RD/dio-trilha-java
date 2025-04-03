@@ -10,7 +10,7 @@ public class ContaBancaria {
     double saldo = 0;
     double chequeEspecial = 0;
     double saldoInicial = 0;
-    double chequeEspecialInicial = 0;
+
 
     System.out.println("\n Criação de conta");
     System.out.print("Informe seu nome: ");
