@@ -1,3 +1,5 @@
+package domain;
+
 public non-sealed class Gerente extends Colaborador {
   
   private String login;
@@ -5,7 +7,24 @@ public non-sealed class Gerente extends Colaborador {
   private String senha;
   
   private double comisao;
-  
+
+  public Gerente(String name, String codigo, int idade, String endereco, double salario, String login, String senha, double comisao) {
+    super(name, codigo, idade, endereco, salario);
+    this.login = login;
+    this.senha = senha;
+    this.comisao = comisao;
+  }
+
+  public Gerente() {
+
+  }
+
+  @Override
+  public String getCodigo(){
+    return "MN " + this.codigo;
+  }
+
+
   public String getLogin() {
 	return login;
   }
@@ -29,4 +48,12 @@ public non-sealed class Gerente extends Colaborador {
   public void setComisao(double comisao) {
 	this.comisao = comisao;
   }
+
+
+  @Override
+  public double calculoSalario() {
+    return this.salario + this.comisao;
+  }
+
+
 }
