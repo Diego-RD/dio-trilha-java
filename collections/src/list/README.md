@@ -1,4 +1,9 @@
-# Fixando os Conhecimentos
+
+# Desafios
+
+- Aqui nessa pasta temos os códigos com os exercicios abaixo separados por pastas.
+
+## Fixando os Conhecimentos
 
 Exercícios:
 
