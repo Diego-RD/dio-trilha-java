@@ -5,7 +5,7 @@ import java.util.List;
 
 public class SomaNumeros {
 
-  private List<Integer> numero ;
+  private List<Integer> numero;
 
   public SomaNumeros() {
     this.numero = new ArrayList<>();
@@ -67,7 +67,7 @@ public void exibirNumeros(){
     SomaNumeros numero = new SomaNumeros();
 
     numero.adicionarNumero(35);
-    numero.adicionarNumero(2);
+    numero.adicionarNumero(-2);
     numero.adicionarNumero(20);
     numero.adicionarNumero(5);
     numero.adicionarNumero(7);
