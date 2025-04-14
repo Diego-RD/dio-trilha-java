@@ -68,3 +68,11 @@ class ComparatorPorPreco implements Comparator<Produto> {
     return Double.compare(p1.getPreco(), p2.getPreco());
   }
 }
+
+class ComparadorPorCodigo implements Comparator<Produto>{
+
+  @Override
+  public int compare(Produto p1, Produto p2) {
+    return Long.compare(p1.getCod(),p2.getCod());
+  }
+}

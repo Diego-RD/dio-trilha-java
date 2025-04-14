@@ -27,6 +27,12 @@ public class CadastroProdutos {
     return produtoPorPreco;
   }
 
+  public Set<Produto> exibirProdutosPorCodigo(){
+    Set<Produto> produtosPorCodigo = new TreeSet<>(new ComparadorPorCodigo());
+    produtosPorCodigo.addAll(produtoSet);
+    return produtosPorCodigo;
+  }
+
   public static void main(String[] args) {
 
     CadastroProdutos cadastroProdutos = new CadastroProdutos();
@@ -42,6 +48,8 @@ public class CadastroProdutos {
     System.out.println(cadastroProdutos.exibirProdutosPorNome());
 
     System.out.println(cadastroProdutos.exibirProdutosPorPreco());
+
+    System.out.println(cadastroProdutos.exibirProdutosPorCodigo());
 
   }
 
