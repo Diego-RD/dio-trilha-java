@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
   private final static Scanner scanner = new Scanner(System.in);
   private final static PetMachine petmachine = new PetMachine();
+
   public static void main(String[] args) {
     // permite que digite frases sem dar exeções como espaço no meio da entrada.
     scanner.useDelimiter("\\n");
@@ -23,7 +24,7 @@ public class Main {
       System.out.print("> ");
       opcao = scanner.nextInt();
 
-      switch (opcao){
+      switch (opcao) {
         case 1 -> petmachine.darBanho();
         case 2 -> abastecerAgua();
         case 3 -> abastecerShampoo();
@@ -36,16 +37,16 @@ public class Main {
         case 0 -> System.exit(0);
         default -> System.out.println("Escolha uma opção valida de 1 a 9.");
       }
-    } while(true);
+    } while (true);
   }
 
-  private static void abastecerAgua(){
+  private static void abastecerAgua() {
     petmachine.adicionarAgua();
     System.out.println("Abastecendo Água maquina esta com " + petmachine.getAgua() + " litro(s) de Água");
 
   }
 
-  private static void abastecerShampoo(){
+  private static void abastecerShampoo() {
     petmachine.adicionarShampoo();
     System.out.println("Abastecendo Shampoo maquina esta com " + petmachine.getShampoo() + " litro(s) de Shampoo");
   }
@@ -65,9 +66,9 @@ public class Main {
     System.out.println(temPet ? "Tem pet na maquina" : "Não tem pet na maquina");
   }
 
-  public static void colocarPerNaMaquina(){
+  public static void colocarPerNaMaquina() {
     var name = "";
-    while(name == null || name.isEmpty()){
+    while (name == null || name.isEmpty()) {
       System.out.println("Informe o nome do pet:");
       name = scanner.next();
     }
